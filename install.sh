@@ -38,7 +38,7 @@ sudo mv TeamAPoolProjectUI/ ../TeamAPoolProjectUI/
 sleep 15
 
 echo -e "${BLINK}${CYAN}CD into project."
-sudo cd ../TeamAPoolProjectUI
+cd ../TeamAPoolProjectUI
 
 sleep 15
 
