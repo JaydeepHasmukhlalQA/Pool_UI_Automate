@@ -18,26 +18,40 @@ sudo apt-get install -y git
 sudo apt-get install -y nodejs
 echo -e "${BLINK}${GREEN} Finished Installing."
 
+sleep 15
+
 echo -e "${BLINK}${CYAN} Installing API Service."
 sudo cp ./poolui.service /etc/systemd/system/
 sudo systemctl daemon-reload
 echo -e "${BLINK}${GREEN}Finished installing API Service."
 
+sleep 15
+
 echo -e "${BLINK}${CYAN}Cloning GIT repo."
 sudo git clone https://github.com/Nboaram/TeamAPoolProjectUI.git
+
+sleep 15
 
 echo -e "${BLINK}${CYAN}Moving project to base."
 sudo mv TeamAPoolProjectUI/ ../TeamAPoolProjectUI/
 
+sleep 15
+
 echo -e "${BLINK}${CYAN}CD into project."
 sudo cd ../TeamAPoolProjectUI
+
+sleep 15
 
 echo -e "${BLINK}${CYAN}Checking into Developer."
 sudo git checkout Developer
 
+sleep 15
+
 echo -e "${BLINK}${CYAN}Installing angular and dependencies."
 sudo npm install -g @angular/cli
 sudo npm install
+
+sleep 15
 
 echo -e "${BLINK}${CYAN}Starting poolui.service.${DEFULT}${NOBLINK}"
 sudo systemctl start poolui
