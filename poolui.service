@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/jaydeeph_vaja
-ExecStart=/usr/bin/ng /home/jaydeeph_vaja/TeamB_Pool_Project_API/index.js
+ExecStart=/usr/bin/ng /home/jaydeeph_vaja/TeamB_Pool_Project_API/index.js --host 0.0.0.0
 Restart=on-failure
 
 [Install]
