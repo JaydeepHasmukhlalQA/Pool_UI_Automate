@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/jaydeeph_vaja
-ExecStart=/usr/bin/ng /home/jaydeeph_vaja/TeamAPoolProjectUI/index.js --host 0.0.0.0
+ExecStart=/usr/bin/ng s --host 0.0.0.0 /home/jaydeeph_vaja/TeamAPoolProjectUI/index.js
 Restart=on-failure
 
 [Install]

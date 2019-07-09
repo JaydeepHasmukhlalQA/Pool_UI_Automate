@@ -38,3 +38,6 @@ sudo git checkout Developer
 echo -e "${BLINK}${CYAN}Installing angular and dependencies."
 sudo npm install -g @angular/cli
 sudo npm install
+
+echo -e "${BLINK}${CYAN}Starting poolui.service.${DEFULT}${NOBLINK}"
+sudo systemctl start poolui
