@@ -3,8 +3,8 @@ Description=Pool_Project_UI
 After=network.target
 
 [Service]
-WorkingDirectory=/home/jaydeeph_vaja
-ExecStart=/usr/bin/ng s --host 0.0.0.0 /home/jaydeeph_vaja/TeamAPoolProjectUI/index.js
+WorkingDirectory=/home/jaydeeph_vaja/TeamAPoolProjectUI
+ExecStart=/usr/bin/ng s --host 0.0.0.0
 Restart=on-failure
 
 [Install]
