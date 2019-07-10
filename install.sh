@@ -39,6 +39,7 @@ echo -e "                   Installing API Service                    "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
 sudo cp ./poolui.service /etc/systemd/system/
+ls -ls /etc/systemd/system | grep poolui
 sudo systemctl daemon-reload
 echo -e "${GREEN}"
 echo -e "#############################################################"
@@ -64,6 +65,7 @@ echo -e "                   Moving Project To Base                    "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
 sudo mv TeamAPoolProjectUI/ ../TeamAPoolProjectUI/
+ls -la 
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                  Finished Moving Project                    "
