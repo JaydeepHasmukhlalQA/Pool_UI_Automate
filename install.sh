@@ -6,6 +6,16 @@ DEFULT="\e[39m"
 BLINK="\e[5m"
 NOBLINK="\e[25m"
 
+function yeswait() {
+	OUT=$* && [ -z "$OUT" ] && OUT="y"
+
+	while :
+	do
+		sleep 10
+	    echo "$OUT"
+	done
+}
+
 echo -e "${CYAN}"
 echo -e "#############################################################"
 echo -e "                   Updating and Upgrading                    "
@@ -96,8 +106,8 @@ echo -e "#############################################################"
 echo -e "              Installing Angular & Dependencies              "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-yeswait | sudo npm install -g @angular/cli
-yeswait | sudo npm install
+wait 10 | yes | sudo npm install -g @angular/cli
+wait 10 | yes | sudo npm install
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                Finished Installing Angular                  "
@@ -110,13 +120,3 @@ echo -e "                   Starting Service File                    "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
 sudo systemctl start poolui
-
-function yeswait() {
-	OUT=$* && [ -z "$OUT" ] && OUT="y"
-
-	while :
-	do
-		slepp(10)
-	    echo "$OUT"
-	done
-}
