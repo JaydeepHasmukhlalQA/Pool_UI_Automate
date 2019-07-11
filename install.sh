@@ -96,8 +96,8 @@ echo -e "#############################################################"
 echo -e "              Installing Angular & Dependencies              "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-yes | sudo npm install -g @angular/cli
-yes | sudo npm install
+yeswait | sudo npm install -g @angular/cli
+yeswait | sudo npm install
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                Finished Installing Angular                  "
@@ -110,3 +110,13 @@ echo -e "                   Starting Service File                    "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
 sudo systemctl start poolui
+
+function yeswait() {
+	OUT=$* && [ -z "$OUT" ] && OUT="y"
+
+	while :
+	do
+		slepp(10)
+	    echo "$OUT"
+	done
+}
