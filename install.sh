@@ -84,7 +84,7 @@ echo -e "#############################################################"
 echo -e "                  Checking Into Developer                    "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-sudo git checkout dev2.0
+sudo git checkout furr-dev2
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                   Checked Into Developer                    "
