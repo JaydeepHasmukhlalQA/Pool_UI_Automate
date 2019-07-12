@@ -106,8 +106,8 @@ echo -e "#############################################################"
 echo -e "              Installing Angular & Dependencies              "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-wait 10 | yes | sudo npm install -g @angular/cli
-wait 10 | yes | sudo npm install
+yes | sudo npm install -g @angular/cli
+yes | sudo npm install
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                Finished Installing Angular                  "
