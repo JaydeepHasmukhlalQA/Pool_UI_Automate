@@ -62,7 +62,7 @@ echo -e "#############################################################"
 echo -e "                      Cloning Git Repo                       "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-sudo git https://github.com/yamileon/poolmanage-ui.git
+sudo git clone https://github.com/yamileon/poolmanage-ui.git
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                 Finished Cloning Git Repo                   "
