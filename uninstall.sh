@@ -8,5 +8,5 @@ echo -e "${BLINK} ${CYAN} Removing Files. ${DEFULT} ${NOBLINK}"
 sudo systemctl stop poolui
 sudo systemctl disable poolui
 
-sudo rm -fR ../TeamAPoolProjectUI
+sudo rm -fR ../poolmanage-ui
 sudo rm -fR /etc/systemd/system/poolui.service

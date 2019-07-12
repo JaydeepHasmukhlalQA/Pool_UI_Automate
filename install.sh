@@ -62,7 +62,7 @@ echo -e "#############################################################"
 echo -e "                      Cloning Git Repo                       "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-sudo git clone https://github.com/Nboaram/TeamAPoolProjectUI.git
+sudo git https://github.com/yamileon/poolmanage-ui.git
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                 Finished Cloning Git Repo                   "
@@ -74,7 +74,7 @@ echo -e "#############################################################"
 echo -e "                   Moving Project To Base                    "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-sudo mv TeamAPoolProjectUI/ ../TeamAPoolProjectUI/
+sudo mv poolmanage-ui/ ../poolmanage-ui/
 ls -la 
 echo -e "${GREEN}"
 echo -e "#############################################################"
@@ -87,7 +87,7 @@ echo -e "#############################################################"
 echo -e "                       Into Project                        "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-cd ../TeamAPoolProjectUI
+cd ../poolmanage-ui
 
 echo -e "${CYAN}"
 echo -e "#############################################################"

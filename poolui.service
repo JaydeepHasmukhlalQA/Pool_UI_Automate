@@ -3,7 +3,7 @@ Description=Pool_Project_UI
 After=network.target
 
 [Service]
-WorkingDirectory=/home/poolui/TeamAPoolProjectUI
+WorkingDirectory=/home/poolui/poolmanage-ui
 ExecStart=/usr/bin/ng s --host 0.0.0.0
 Restart=on-failure
 
