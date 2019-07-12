@@ -6,16 +6,6 @@ DEFULT="\e[39m"
 BLINK="\e[5m"
 NOBLINK="\e[25m"
 
-function yeswait() {
-	OUT=$* && [ -z "$OUT" ] && OUT="y"
-
-	while :
-	do
-		sleep 10
-	    echo "$OUT"
-	done
-}
-
 echo -e "${CYAN}"
 echo -e "#############################################################"
 echo -e "                   Updating and Upgrading                    "
@@ -94,7 +84,7 @@ echo -e "#############################################################"
 echo -e "                  Checking Into Developer                    "
 echo -e "############################################################# \n"
 echo -e "${DEFULT}"
-sudo git checkout Developer
+sudo git checkout dev2.0
 echo -e "${GREEN}"
 echo -e "#############################################################"
 echo -e "                   Checked Into Developer                    "
